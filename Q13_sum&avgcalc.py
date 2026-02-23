@@ -22,9 +22,11 @@ for i in range(1, count + 1):
 
 # Calculate average
 average = total / count
+median = (maximum + minimum) / 2
 
 print("\nResults:")
 print("Sum:", total)
 print("Average:", average)
 print("Maximum:", maximum)
 print("Minimum:", minimum)
+print("Median:", median)
