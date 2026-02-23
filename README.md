@@ -2,9 +2,13 @@ CampusPe – Python Basics Assignment
 ====================================
 
 Name            : Prajwal BG
+
 Course          : BTech CSE
+
 Module Covered  : Modules 1–6 (Basics to Functions)
+
 Submission Type : Internship Assignment
+
 Language Used   : Python 3
 
 ------------------------------------------------------------
@@ -14,12 +18,19 @@ PROJECT DESCRIPTION
 This assignment consists of 20 Python programs covering
 basic to intermediate concepts including:
 
+
 • Variables and Data Types
+
 • Conditional Statements
+
 • Loops (for, while)
+
 • Functions
+
 • String Manipulation
+
 • Mathematical Computations
+
 • Menu-Driven Programs
 
 Each question is implemented separately as required.
