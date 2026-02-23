@@ -55,20 +55,17 @@ Q20 - Number System Functions
 SPECIAL IMPLEMENTATIONS
 ------------------------------------------------------------
 
-• Edge cases handled (division by zero, negative numbers, etc.)
-• Menu-driven programs implemented for Q10, Q18, and Q20
-• Additional number patterns added in Q11 (Bonus)
-• Median and Mode implemented manually in Q13
-• Proper input validation included where necessary
+• Edge cases handled (division by zero, negative numbers, etc.)/n
+• Menu-driven programs implemented for Q10, Q18, and Q20/n
+• Additional 3 number patterns added in Q11 (Bonus)/n
 
 
 ------------------------------------------------------------
 CHALLENGES FACED
 ------------------------------------------------------------
 
-• Implementing mode calculation without using built-in libraries
 • Designing menu-based systems with proper loop control
 • Handling edge cases for mathematical functions
 • Managing file organization and version control using Git
-• Ensuring structured and readable code for each program
+• Writing code without use of List,Tuple etc
 
