@@ -67,7 +67,10 @@ CHALLENGES FACED
 ------------------------------------------------------------
 
 • Designing menu-based systems with proper loop control
+
 • Handling edge cases for mathematical functions
+
 • Managing file organization and version control using Git
+
 • Writing code without use of List,Tuple etc
 
