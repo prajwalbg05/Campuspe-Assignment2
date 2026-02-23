@@ -1,0 +1,51 @@
+def count_words(text):
+    words=text.split()
+    return len(words)
+def count_vowels(text):
+    vowels='aeiouAEIOU'
+    count=0
+    for char in text:
+        if char in vowels:
+            count+=1
+    return count
+def count_consonants(text):
+    vowels='aeiouAEIOU'
+    count=0
+    for char in text:
+        if char.isalpha() and char not in vowels:
+            count+=1
+    return count
+def reverse_text(text):
+    return text[::-1]
+def is_palindrome(text):
+    cleaned_text = ''.join(char.lower() for char in text if char.isalnum())
+    return cleaned_text == cleaned_text[::-1]
+def word_frequencies(text):
+    words=text.split()
+    frequencies={}
+    for word in words:
+        word=word.lower()
+        if word in frequencies:
+            frequencies[word]+=1
+        else:
+            frequencies[word]=1
+    return frequencies
+def longest_word(text):
+    words=text.split()
+    longest=''
+    for word in words:
+        if len(word)>len(longest):
+            longest=word
+    return longest
+def analyze_text(text):
+    print("============Text Analysis============")
+    print("Total words:", count_words(text))
+    print("Total vowels:", count_vowels(text))
+    print("Total consonants:", count_consonants(text))
+    print("Reversed text:", reverse_text(text))
+    print("Is palindrome:", is_palindrome(text))
+    print("Word frequencies:", word_frequencies(text))
+    print("Longest word:", longest_word(text))
+if __name__ == "__main__":
+    user_input=input("Enter a sentence or word for analysis: ")
+    analyze_text(user_input)
