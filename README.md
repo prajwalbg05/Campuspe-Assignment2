@@ -55,9 +55,11 @@ Q20 - Number System Functions
 SPECIAL IMPLEMENTATIONS
 ------------------------------------------------------------
 
-• Edge cases handled (division by zero, negative numbers, etc.)/n
-• Menu-driven programs implemented for Q10, Q18, and Q20/n
-• Additional 3 number patterns added in Q11 (Bonus)/n
+• Edge cases handled (division by zero, negative numbers, etc.)
+
+• Menu-driven programs implemented for Q10, Q18, and Q20
+
+• Additional 3 number patterns added in Q11 (Bonus)
 
 
 ------------------------------------------------------------
