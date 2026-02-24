@@ -15,32 +15,52 @@ def grade_calculator(marks):
         return "D"
     else:
         return "F"
-sub = ["Math", "Science", "English", "History", "Art"]
-array = []
+
 print("Enter marks for 5 subjects (out of 100):")
 print("--------------------------------------")
-for i in range(5):
-    print("Subject ", i, ":", sub[i])
-for i in range(5):
-    array.append(int(input("Enter marks for subject " + sub[i] + ": ")))
-    print("Marks for subject ",sub[i],":",array[i])
 
 
-total_marks = sum(array)
-print("\nTotal Marks:", total_marks)
+math = int(input("Enter marks for Math: "))
+science = int(input("Enter marks for Science: "))
+english = int(input("Enter marks for English: "))
+history = int(input("Enter marks for History: "))
+art = int(input("Enter marks for Art: "))
 
-percentage = (total_marks / 500) * 100
-print("Percentage:", percentage)
+# Total
+total = math + science + english + history + art
+print("\nTotal Marks:", total, "/ 500")
 
-print("Grade:", grade_calculator(total_marks))
+# Percentage
+percentage = (total / 500) * 100
+print("Percentage:", round(percentage, 2), "%")
 
-for i in range(5):
-    if array[i] >= 40:
-        continue
-    else:
-        print("You have failed in subject " + sub[i])
-        break
+# Grade
+print("Grade:", grade_calculator(percentage))
+
+# Pass/Fail (all subjects must be >= 40)
+failed = False
+
+if math < 40:
+    print("Failed in Math")
+    failed = True
+
+if science < 40:
+    print("Failed in Science")
+    failed = True
+
+if english < 40:
+    print("Failed in English")
+    failed = True
+
+if history < 40:
+    print("Failed in History")
+    failed = True
+
+if art < 40:
+    print("Failed in Art")
+    failed = True
+
+if failed == False:
+    print("Result: Pass")
 else:
-    print("Congratulations! You have passed all subjects.")
-
-#
+    print("Result: Fail")
