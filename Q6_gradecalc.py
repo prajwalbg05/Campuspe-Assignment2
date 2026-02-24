@@ -1,5 +1,4 @@
 # Question 5: Grade Calculator
-from numpy import array
 
 
 def grade_calculator(marks):
